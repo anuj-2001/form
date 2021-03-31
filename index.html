@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student Data Entry Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\anujp\OneDrive\Documents\IT262-WEB\LAB-4\styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="#">
+                <h1>Student Data Entry Form</h1>
+                    <div class="form-group">
+                        <label>Student ID : </label>
+                        <input type="text" id="id" name="id" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Student Name : </label> 
+                        <input type="text" id="sname" name="sname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Course Name : </label> 
+                        <input type="text" id="cname" name="cname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email : </label> 
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Password : </label> 
+                        <input type="password" id="pass" name="pass" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Compare Password : </label>
+                        <input type="password" id="cpass" name="cpass" class="form-control"> 
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <input type="reset" class = "btn" value ="Cancel">
+                        </div>
+                        <div class="column">
+                            <input type="submit" onclick="validEmail(); checkPassword(); isEmpty();" class="btn" value="Submit">
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <script src="C:\Users\anujp\OneDrive\Documents\IT262-WEB\LAB-4\script.js"></script>
+    </body>
+</html>
